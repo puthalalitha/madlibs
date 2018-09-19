@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="/static/madlibs.css">
-    </head>
-    <body>
+{% extends 'base.html' %}
+{% block content %}
           <p>
             Be {{verb}} to your {{noun}}footed {{noun}}s
             For a duck may be somebody`s {{name}},
@@ -13,5 +9,4 @@
             You may think that this is the {{name}},
             Well it is. 
         </p>
-    </body>
-</html>
+{% endblock %}

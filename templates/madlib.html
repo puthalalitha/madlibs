@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="/static/madlibs.css">
-    </head>
-    
-    <body>
-       
+{% extends 'base.html' %}
+
+{%block title %}madlib{% endblock %}
+
+{% block content %}
         <p>
             There once was a {{color}} {{noun}} sitting in the Hackbright Lab.
             When {{name}} went to pick it up, it {{verb}} into flames in a totally {{adjective}} way.
         </p>
        
-    <!--     <p>
-            Be {{verb}} to your {{noun}}footed {{noun}}s
-            For a duck may be somebody`s {{name}},
-            Be {{verb}} to your {{noun}}s in Sunnyvale
-            Where the {{color}} is always {{adjective}}.
-
-            You may think that this is the {{name}},
-            Well it is. 
-        </p>
-         -->
-    </body>
-</html>
+{% endblock %}
