@@ -1,6 +1,6 @@
 """A madlib game that compliments its users."""
 
-from random import choice
+from random import choice, randint
 
 from flask import Flask, render_template, request
 
@@ -56,14 +56,16 @@ def show_madlib():
     color = request.args.get("color")
     noun = request.args.get("noun")
     adjective = request.args.get("adjective")
+    verb = request.args.get("verb")
+    filename_list = ["madlib.html", "madlibs2.html"]
+    filename = choice(filename_list)
 
-
-
-    return render_template("madlib.html", 
+    return render_template(filename,
                             name=person, 
                             color=color, 
                             noun=noun, 
-                            adjective=adjective)
+                            adjective=adjective,
+                            verb=verb)
 
 
 if __name__ == '__main__':

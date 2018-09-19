@@ -1,0 +1,19 @@
+p {
+    color: red;
+    background-color: lightblue;
+    font-size: 200%;
+}
+
+form {
+    text-align: center;
+    font-size: 200%;
+    margin: 3em;
+}
+
+h1{
+    color: pink;
+}
+
+.test {
+    background-color: yellow;
+}

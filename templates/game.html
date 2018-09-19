@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="/static/madlibs.css">
+    </head>
     <body>
         <form action="/madlib">
-            Person Name: 
-            <input type="text" name="name"><br><br>
-            <input type="radio" name="color" value="red">RED
-            <input type="radio" name="color" value="blue">BLUE
-            <input type="radio" name="color" value="green">GREEN
-            <input type="radio" name="color" value="pink">PINK
-            <br><br>
+            <div class="test">
+                Person Name: 
+                <input type="text" name="name"><br><br>
+                <input type="radio" name="color" value="red">RED
+                <input type="radio" name="color" value="blue">BLUE
+                <input type="radio" name="color" value="green">GREEN
+                <input type="radio" name="color" value="pink">PINK
+                <br><br>
+            </div>
             Noun: 
             <select name="noun">
                 <option value="book">BOOK</option>
@@ -22,6 +27,13 @@
             <input type="checkbox" name="adjective" value="cold">COLD
             <input type="checkbox" name="adjective" value="sweet">SWEET
             <br><br>
+            Verbs:
+            <select name="verb">
+                <option value="sit">SIT</option>
+                <option value="swim">SWIM</option>
+                <option value="run">RUN</option>
+                <option value="dance">DANCE</option>
+            </select><br><br>
             <input type="submit">
 
         </form>
